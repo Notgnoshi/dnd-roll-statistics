@@ -28,11 +28,13 @@ usage() {
     echo
     echo "  CSV             The CSV file(s) to generate statistics for. May be repeated"
     echo
-    echo "  --help, -h      Show this help and exit"
+    echo "  --help, -h          Show this help and exit"
+    echo "  --interactive, -i   Use an interactive window to display the generated plots"
 }
 
 generate_plots() {
-    local -r csv="$1"
+    local -r interactive="$1"
+    local -r csv="$2"
 
     if [[ ! -f "$csv" ]]; then
         error "CSV: '$csv' does not exist"
@@ -44,18 +46,30 @@ generate_plots() {
     csvname="$(basename "$csv" .csv)"
 
     # NOTE: Assumes that the CSV uses 'roll' as the column name
-    csvplot --xlabel time --ylabel roll --ymin 1 --ymax 21 -y roll "$csv" --output "$REPO/figures/$csvname-time-series.png"
-    csvstats --discrete --min 1 --max 20 --bins 20 --histogram --column roll "$csv" --output "$REPO/figures/$csvname-histogram.png"
+    local args=()
+    if [[ "$interactive" = "false" ]]; then
+        args=(--output "$REPO/figures/$csvname-time-series.png")
+    fi
+    csvplot --xlabel time --ylabel roll --ymin 1 --ymax 21 -y roll "$csv" "${args[@]}"
+
+    if [[ "$interactive" = "false" ]]; then
+        args=(--output "$REPO/figures/$csvname-histogram.png")
+    fi
+    csvstats --discrete --min 1 --max 20 --bins 20 --histogram --column roll "$csv" "${args[@]}"
 }
 
 main() {
     local csvs=()
+    local interactive="false"
 
     while [[ $# -gt 0 ]]; do
         case "$1" in
         --help | -h)
             usage
             exit 0
+            ;;
+        --interactive | -i)
+            interactive="true"
             ;;
         -*)
             error "Unexpected option: '$1'"
@@ -69,7 +83,7 @@ main() {
     done
 
     for csv in "${csvs[@]}"; do
-        generate_plots "$csv"
+        generate_plots "$interactive" "$csv"
     done
 }
 
