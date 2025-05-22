@@ -17,9 +17,9 @@ mean: 12.777777777777777
 stddev: 6.683600486859836
 ```
 
-![time series](./figures/07-time-series.png)
+![time series](./figures/session-07-time-series.png)
 
-![histogram](./figures/07-histogram.png)
+![histogram](./figures/session-07-histogram.png)
 
 ## Session 6
 
@@ -34,9 +34,9 @@ mean: 9.26086956521739
 stddev: 6.3013162768387065
 ```
 
-![time series](./figures/06-time-series.png)
+![time series](./figures/session-06-time-series.png)
 
-![histogram](./figures/06-histogram.png)
+![histogram](./figures/session-06-histogram.png)
 
 ## Session 5
 
@@ -51,9 +51,9 @@ mean: 8.838709677419354
 stddev: 6.42245334888667
 ```
 
-![time series](./figures/05-time-series.png)
+![time series](./figures/session-05-time-series.png)
 
-![histogram](./figures/05-histogram.png)
+![histogram](./figures/session-05-histogram.png)
 
 ## Session 4
 
@@ -68,9 +68,9 @@ mean: 10.636363636363638
 stddev: 7.967616409885619
 ```
 
-![time series](./figures/04-time-series.png)
+![time series](./figures/session-04-time-series.png)
 
-![histogram](./figures/04-histogram.png)
+![histogram](./figures/session-04-histogram.png)
 
 ## Session 3
 
@@ -85,9 +85,9 @@ mean: 11.071428571428571
 stddev: 7.2068065475704195
 ```
 
-![time series](./figures/03-time-series.png)
+![time series](./figures/session-03-time-series.png)
 
-![histogram](./figures/03-histogram.png)
+![histogram](./figures/session-03-histogram.png)
 
 ## Session 2
 
@@ -102,9 +102,9 @@ mean: 9.571428571428573
 stddev: 5.803823252952202
 ```
 
-![time series](./figures/02-time-series.png)
+![time series](./figures/session-02-time-series.png)
 
-![histogram](./figures/02-histogram.png)
+![histogram](./figures/session-02-histogram.png)
 
 ## Session 1
 
@@ -119,9 +119,9 @@ mean: 9.791666666666664
 stddev: 6.93178623865251
 ```
 
-![time series](./figures/01-time-series.png)
+![time series](./figures/session-01-time-series.png)
 
-![histogram](./figures/01-histogram.png)
+![histogram](./figures/session-01-histogram.png)
 
 # How to use
 
