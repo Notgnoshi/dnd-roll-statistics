@@ -9,6 +9,8 @@ GREEN="\033[32m"
 BLUE="\033[34m"
 RESET="\033[0m"
 
+REPO=$(git rev-parse --show-toplevel)
+
 debug() {
     echo -e "${BLUE}DEBUG:${RESET} $*" >&2
 }
@@ -38,9 +40,12 @@ generate_plots() {
     fi
     debug "Generating plots for '$csv' ..."
 
+    local csvname
+    csvname="$(basename "$csv" .csv)"
+
     # NOTE: Assumes that the CSV uses 'roll' as the column name
-    csvplot --xlabel time --ylabel roll --ymin 1 --ymax 21 -y roll "$csv"
-    csvstats --discrete --min 1 --max 20 --bins 20 --histogram --column roll "$csv"
+    csvplot --xlabel time --ylabel roll --ymin 1 --ymax 21 -y roll "$csv" --output "$REPO/figures/$csvname-time-series.png"
+    csvstats --discrete --min 1 --max 20 --bins 20 --histogram --column roll "$csv" --output "$REPO/figures/$csvname-histogram.png"
 }
 
 main() {
