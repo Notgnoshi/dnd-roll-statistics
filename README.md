@@ -4,6 +4,23 @@ All d20 rolls manually recorded during the session, and processed afterwards.
 
 # Sessions
 
+## Session 8
+
+```
+count: 26
+Q1: 2
+median: 6
+Q3: 10
+min: 1 at index: 6
+max: 19 at index: 20
+mean: 6.9230769230769225
+stddev: 5.088182523458802
+```
+
+![time series](./figures/session-08-time-series.png)
+
+![histogram](./figures/session-08-histogram.png)
+
 ## Session 7
 
 ```
