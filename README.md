@@ -2,6 +2,21 @@
 
 All d20 rolls manually recorded during the session, and processed afterwards.
 
+# Aggregate statistics
+
+```
+count: 253
+Q1: 4
+median: 9
+Q3: 14
+min: 1 at index: 90
+max: 20 at index: 15
+mean: 9.438735177865615
+stddev: 5.749228928538348
+```
+
+![histogram](./figures/aggregate-histogram.png)
+
 # Sessions
 
 ## Session 14
