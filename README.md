@@ -253,7 +253,7 @@ stddev: 6.93178623865251
 # How to use
 
 Add a new CSV to the `data/` directory, in a column named `roll`. Then run the `./generate.sh`
-script on the new CSV. It require the `csvplot` and `csvstats` tools from
+script on the new CSV. It require the `csvplot`, `csvcat`, and `csvstats` tools from
 https://github.com/Notgnoshi/csvizmo to be installed somewhere in your `$PATH`
 
 ```sh
@@ -263,4 +263,6 @@ https://github.com/Notgnoshi/csvizmo to be installed somewhere in your `$PATH`
 # TODO
 
 * [x] Script to automate statistics and plotting for each CSV
+* [x] Aggregate statistics calculation
+* [ ] Table view at the top of the README with links to details?
 * [ ] Generate the README with a template and a script from any sessions in `data/`

@@ -2,7 +2,7 @@
 set -o errexit
 set -o pipefail
 set -o nounset
-set -o noclobber
+#set -o noclobber
 
 RED="\033[31m"
 GREEN="\033[32m"
@@ -85,6 +85,12 @@ main() {
     for csv in "${csvs[@]}"; do
         generate_plots "$interactive" "$csv"
     done
+
+    info "========================================================================================"
+    info "Calculating aggregate statistics"
+    info "========================================================================================"
+    csvcat "$REPO/data/"*.csv >"$REPO/aggregate.csv"
+    generate_plots "$interactive" "$REPO/aggregate.csv"
 }
 
 main "$@"
