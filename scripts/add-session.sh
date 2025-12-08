@@ -208,6 +208,15 @@ main() {
         shift
     done
 
+    if [[ "$force" == "true" ]]; then
+        info "Deleting existing statistics..."
+        for campaign in "$REPO/data"/*/; do
+            rm "$campaign/statistics.csv"
+            rm "$campaign"/aggregate*.csv
+        done
+        rm "$REPO/data"/aggregate*.csv
+    fi
+
     # Update data
     for new_session in $(new_sessions "$force"); do
         local campaign
