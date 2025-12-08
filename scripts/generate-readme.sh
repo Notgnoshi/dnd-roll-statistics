@@ -159,7 +159,11 @@ generate_global_statistics() {
     local -r stats="$REPO/data/aggregate-stats.csv"
     echo "# Global Statistics"
     echo
+    echo "Here's a histogram of all aggregated rolls across all campaigns:"
+    echo
     echo "![Global Aggregate Histogram](figures/aggregate-histogram.png)"
+    echo
+    echo "and the overall statistics:"
     echo
     render_stats_to_table "$stats" "false"
 }
@@ -172,7 +176,11 @@ generate_campaign_statistics() {
     echo
     echo "## $campaign_name statistics"
     echo
+    echo "Here's a histogram of all aggregated rolls for the '$campaign_name' campaign:"
+    echo
     echo "![$campaign_name Aggregate Histogram](figures/$campaign_name/aggregate-histogram.png)"
+    echo
+    echo "and the per-session statistics:"
     echo
 
     csvcat "$campaign/aggregate-stats.csv" "$campaign/statistics.csv" >"/tmp/$campaign_name-stats.csv"
