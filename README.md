@@ -1,268 +1,102 @@
+<!-- NOTE: This document is generated. Do not hand-edit! -->
 # D&D Roll Statistics
 
-All d20 rolls manually recorded during the session, and processed afterwards.
+This project tracks my d20 roll statistics for the Dungeons & Dragons games I participate in.
 
-# Aggregate statistics
+Table of contents:
+* [Global Statistics](#global-statistics)
+* Campaign Statistics
+  * [one-shot-gang](#one-shot-gang-statistics)
+  * [tyranny-of-dragons-1](#tyranny-of-dragons-1-statistics)
+* [FAQ](#faq)
 
-```
-count: 253
-Q1: 4
-median: 9
-Q3: 14
-min: 1 at index: 90
-max: 20 at index: 15
-mean: 9.438735177865615
-stddev: 5.749228928538348
-```
+# Global Statistics
 
-![histogram](./figures/aggregate-histogram.png)
+Here's a histogram of all aggregated rolls across all campaigns:
 
-# Sessions
+![Global Aggregate Histogram](figures/aggregate-histogram.png)
 
-## Session 14
+and the overall statistics:
 
-```
-count: 15
-Q1: 3
-median: 6
-Q3: 10
-min: 1 at index: 6
-max: 17 at index: 4
-mean: 7.0666666666666655
-stddev: 5.616741144355383
-```
+| count | mean | stddev | Q1 | median | Q3 |
+| --- | --- | --- | --- | --- | --- |
+| 253 | 9.44 | 5.75 | 4 | 9 | 14 |
 
-![time series](./figures/session-14-time-series.png)
+# Campaign Statistics
 
-![histogram](./figures/session-14-histogram.png)
+## one-shot-gang statistics
 
-## Session 13
+Here's a histogram of all aggregated rolls for the 'one-shot-gang' campaign:
 
-```
-count: 11
-Q1: 6
-median: 10
-Q3: 12
-min: 1 at index: 5
-max: 14 at index: 9
-mean: 8.636363636363637
-stddev: 5.162815769196754
-```
+![one-shot-gang Aggregate Histogram](figures/one-shot-gang/aggregate-histogram.png)
 
-![time series](./figures/session-13-time-series.png)
+and the per-session statistics:
 
-![histogram](./figures/session-13-histogram.png)
+| session | count | mean | stddev | Q1 | median | Q3 |
+| --- | --- | --- | --- | --- | --- | --- |
+| aggregate | 21 | 9 | 6.73 | 2 | 9 | 15 |
+| [session-01](figures/one-shot-gang/sessions/session-01-histogram.png) | 21 | 9 | 6.73 | 2 | 9 | 15 |
 
-## Session 12
+## tyranny-of-dragons-1 statistics
 
-```
-count: 2
-min: 6 at index: 0
-max: 8 at index: 1
-mean: 7
-stddev: 6.324555320336759
-```
+Here's a histogram of all aggregated rolls for the 'tyranny-of-dragons-1' campaign:
 
-## Session 11
+![tyranny-of-dragons-1 Aggregate Histogram](figures/tyranny-of-dragons-1/aggregate-histogram.png)
 
-```
-count: 10
-Q1: 5
-median: 14.5
-Q3: 15
-min: 1 at index: 0
-max: 20 at index: 4
-mean: 11.6
-stddev: 7.960109356152035
-```
+and the per-session statistics:
 
-![time series](./figures/session-11-time-series.png)
+| session | count | mean | stddev | Q1 | median | Q3 |
+| --- | --- | --- | --- | --- | --- | --- |
+| aggregate | 232 | 9.48 | 5.74 | 5 | 9 | 14 |
+| [session-01](figures/tyranny-of-dragons-1/sessions/session-01-histogram.png) | 24 | 9.79 | 6.93 | 3.50 | 10 | 13 |
+| [session-02](figures/tyranny-of-dragons-1/sessions/session-02-histogram.png) | 21 | 9.57 | 5.80 | 5 | 8 | 14 |
+| [session-03](figures/tyranny-of-dragons-1/sessions/session-03-histogram.png) | 14 | 11.07 | 7.21 | 8 | 11 | 15 |
+| [session-04](figures/tyranny-of-dragons-1/sessions/session-04-histogram.png) | 22 | 10.64 | 7.97 | 5 | 10 | 16 |
+| [session-05](figures/tyranny-of-dragons-1/sessions/session-05-histogram.png) | 31 | 8.84 | 6.42 | 4 | 8 | 14 |
+| [session-06](figures/tyranny-of-dragons-1/sessions/session-06-histogram.png) | 23 | 9.26 | 6.30 | 6 | 8 | 13 |
+| [session-07](figures/tyranny-of-dragons-1/sessions/session-07-histogram.png) | 18 | 12.78 | 6.68 | 9 | 15 | 17 |
+| [session-08](figures/tyranny-of-dragons-1/sessions/session-08-histogram.png) | 26 | 6.92 | 5.09 | 2 | 6 | 10 |
+| [session-09](figures/tyranny-of-dragons-1/sessions/session-09-histogram.png) | 4 | 14.50 | 11.76 | 11 | 16 | 18 |
+| [session-10](figures/tyranny-of-dragons-1/sessions/session-10-histogram.png) | 11 | 8 | 6.40 | 4 | 7 | 13 |
+| [session-11](figures/tyranny-of-dragons-1/sessions/session-11-histogram.png) | 10 | 11.60 | 7.96 | 5 | 14.50 | 15 |
+| [session-12](figures/tyranny-of-dragons-1/sessions/session-12-histogram.png) | 2 | 7 | 6.32 |  |  |  |
+| [session-13](figures/tyranny-of-dragons-1/sessions/session-13-histogram.png) | 11 | 8.64 | 5.16 | 6 | 10 | 12 |
+| [session-14](figures/tyranny-of-dragons-1/sessions/session-14-histogram.png) | 15 | 7.07 | 5.62 | 3 | 6 | 10 |
 
-![histogram](./figures/session-11-histogram.png)
+# FAQ
 
-## Session 10
+## What do I need to run the scripts in `./scripts/`?
 
-```
-count: 11
-Q1: 4
-median: 7
-Q3: 13
-min: 1 at index: 0
-max: 17 at index: 7
-mean: 8
-stddev: 6.404290894543279
-```
+* [csvizmo](https://github.com/Notgnoshi/csvizmo) installed in your `$PATH`
+  * gnuplot
+* csvtool
+  * Fedora: `sudo dnf install ocaml-csv`
+  * Ubuntu: `sudo apt install csvtool`
 
-![time series](./figures/session-10-time-series.png)
+## How do I add a new session to an existing campaign?
 
-![histogram](./figures/session-10-histogram.png)
+1. Add a `session-<index>.csv` file to `data/<campaign>/sessions/`. The file should have two
+   columns:
 
-## Session 9
+   * `session`: The session number
+   * `roll`: The d20 roll value
 
-```
-count: 4
-Q1: 11
-median: 16
-Q3: 18
-min: 8 at index: 3
-max: 18 at index: 0
-mean: 14.5
-stddev: 11.763093571436485
-```
+2. Run the `./scripts/add_session.sh` script. It will discover the newly created session file and
+   update the campaign statistics accordingly.
 
-![time series](./figures/session-09-time-series.png)
+   ```sh
+   ./scripts/add_session.sh
+   ```
 
-![histogram](./figures/session-09-histogram.png)
+3. Sanity check the changes to the README:
 
-## Session 8
+   ```sh
+   git diff README.md
+   ```
+4. Commit and push
 
-```
-count: 26
-Q1: 2
-median: 6
-Q3: 10
-min: 1 at index: 6
-max: 19 at index: 20
-mean: 6.9230769230769225
-stddev: 5.088182523458802
-```
+## How do I add a new campaign?
 
-![time series](./figures/session-08-time-series.png)
-
-![histogram](./figures/session-08-histogram.png)
-
-## Session 7
-
-```
-count: 18
-Q1: 9
-median: 15
-Q3: 17
-min: 1 at index: 15
-max: 20 at index: 10
-mean: 12.777777777777777
-stddev: 6.683600486859836
-```
-
-![time series](./figures/session-07-time-series.png)
-
-![histogram](./figures/session-07-histogram.png)
-
-## Session 6
-
-```
-count: 23
-Q1: 6
-median: 8
-Q3: 13
-min: 1 at index: 3
-max: 20 at index: 6
-mean: 9.26086956521739
-stddev: 6.3013162768387065
-```
-
-![time series](./figures/session-06-time-series.png)
-
-![histogram](./figures/session-06-histogram.png)
-
-## Session 5
-
-```
-count: 31
-Q1: 4
-median: 8
-Q3: 14
-min: 1 at index: 16
-max: 20 at index: 23
-mean: 8.838709677419354
-stddev: 6.42245334888667
-```
-
-![time series](./figures/session-05-time-series.png)
-
-![histogram](./figures/session-05-histogram.png)
-
-## Session 4
-
-```
-count: 22
-Q1: 5
-median: 10
-Q3: 16
-min: 1 at index: 10
-max: 20 at index: 7
-mean: 10.636363636363638
-stddev: 7.967616409885619
-```
-
-![time series](./figures/session-04-time-series.png)
-
-![histogram](./figures/session-04-histogram.png)
-
-## Session 3
-
-```
-count: 14
-Q1: 8
-median: 11
-Q3: 15
-min: 4 at index: 1
-max: 17 at index: 0
-mean: 11.071428571428571
-stddev: 7.2068065475704195
-```
-
-![time series](./figures/session-03-time-series.png)
-
-![histogram](./figures/session-03-histogram.png)
-
-## Session 2
-
-```
-count: 21
-Q1: 5
-median: 8
-Q3: 14
-min: 2 at index: 5
-max: 18 at index: 14
-mean: 9.571428571428573
-stddev: 5.803823252952202
-```
-
-![time series](./figures/session-02-time-series.png)
-
-![histogram](./figures/session-02-histogram.png)
-
-## Session 1
-
-```
-count: 24
-Q1: 3.5
-median: 10
-Q3: 13
-min: 2 at index: 0
-max: 20 at index: 4
-mean: 9.791666666666664
-stddev: 6.93178623865251
-```
-
-![time series](./figures/session-01-time-series.png)
-
-![histogram](./figures/session-01-histogram.png)
-
-# How to use
-
-Add a new CSV to the `data/` directory, in a column named `roll`. Then run the `./generate.sh`
-script on the new CSV. It require the `csvplot`, `csvcat`, and `csvstats` tools from
-https://github.com/Notgnoshi/csvizmo to be installed somewhere in your `$PATH`
-
-```sh
-./generate.sh ./data/*.csv
-```
-
-# TODO
-
-* [x] Script to automate statistics and plotting for each CSV
-* [x] Aggregate statistics calculation
-* [ ] Table view at the top of the README with links to details?
-* [ ] Generate the README with a template and a script from any sessions in `data/`
+1. Create `data/<campaign>/sessions/`
+2. Create `figures/<campaign>/sessions/`
+3. Add your campaign's first session with the process above
