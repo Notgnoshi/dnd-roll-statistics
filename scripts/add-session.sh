@@ -122,9 +122,12 @@ add_session_statistics() {
 
     # 1a. Append session statistics to <campaign>/statistics.csv
     if [[ "$dry_run" == "false" ]]; then
-        touch "$campaign/statistics.csv"
-        csvcat "$campaign/statistics.csv" "/tmp/session-stats.csv" >"/tmp/statistics.csv"
-        mv "/tmp/statistics.csv" "$campaign/statistics.csv"
+        if [[ ! -f "$campaign/statistics.csv" ]]; then
+            mv /tmp/session-stats.csv "$campaign/statistics.csv"
+        else
+            csvcat "$campaign/statistics.csv" "/tmp/session-stats.csv" >"/tmp/statistics.csv"
+            mv "/tmp/statistics.csv" "$campaign/statistics.csv"
+        fi
     fi
 }
 
