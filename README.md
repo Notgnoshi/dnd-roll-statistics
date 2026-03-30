@@ -23,7 +23,7 @@ and the overall statistics:
 
 | count | mean | stddev | Q1 | median | Q3 |
 | ----- | ---- | ------ | -- | ------ | -- |
-| 271   | 9.53 | 5.85   | 4  | 9      | 15 |
+| 278   | 9.56 | 5.85   | 4  | 9      | 15 |
 
 # Campaign Statistics
 
@@ -64,7 +64,7 @@ and the per-session statistics:
 
 | session                                                                      | count | mean  | stddev | Q1   | median | Q3 |
 | ---------------------------------------------------------------------------- | ----- | ----- | ------ | ---- | ------ | -- |
-| aggregate                                                                    | 232   | 9.48  | 5.74   | 5    | 9      | 14 |
+| aggregate                                                                    | 239   | 9.52  | 5.74   | 5    | 9      | 14 |
 | [session-01](figures/tyranny-of-dragons-1/sessions/session-01-histogram.png) | 24    | 9.79  | 6.93   | 3.50 | 10     | 13 |
 | [session-02](figures/tyranny-of-dragons-1/sessions/session-02-histogram.png) | 21    | 9.57  | 5.80   | 5    | 8      | 14 |
 | [session-03](figures/tyranny-of-dragons-1/sessions/session-03-histogram.png) | 14    | 11.07 | 7.21   | 8    | 11     | 15 |
@@ -79,6 +79,7 @@ and the per-session statistics:
 | [session-12](figures/tyranny-of-dragons-1/sessions/session-12-histogram.png) | 2     | 7     | 6.32   |      |        |    |
 | [session-13](figures/tyranny-of-dragons-1/sessions/session-13-histogram.png) | 11    | 8.64  | 5.16   | 6    | 10     | 12 |
 | [session-14](figures/tyranny-of-dragons-1/sessions/session-14-histogram.png) | 15    | 7.07  | 5.62   | 3    | 6      | 10 |
+| [session-15](figures/tyranny-of-dragons-1/sessions/session-15-histogram.png) | 7     | 10.86 | 9.04   | 5    | 10     | 17 |
 
 # FAQ
 
