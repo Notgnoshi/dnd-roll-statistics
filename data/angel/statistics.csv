@@ -1,0 +1,3 @@
+filename,colname,count,filtered,min,min-index,max,max-index,mean,stddev,Q1,median,Q3
+data/angel/sessions/session-01.csv,roll,9,0,2,6,20,1,10.333333333333334,9.039873338958374,3.5,10,15.5
+data/angel/sessions/session-02.csv,roll,9,0,3,2,19,0,11.333333333333334,9.620366564822428,5.5,12,16.5
