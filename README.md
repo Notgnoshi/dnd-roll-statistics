@@ -23,7 +23,7 @@ and the overall statistics:
 
 | count | mean | stddev | Q1 | median | Q3 |
 | ----- | ---- | ------ | -- | ------ | -- |
-| 278   | 9.56 | 5.85   | 4  | 9      | 15 |
+| 317   | 9.67 | 5.92   | 4  | 9      | 15 |
 
 # Campaign Statistics
 
@@ -62,24 +62,27 @@ Here's a histogram of all aggregated rolls for the 'tyranny-of-dragons-1' campai
 
 and the per-session statistics:
 
-| session                                                                      | count | mean  | stddev | Q1   | median | Q3 |
-| ---------------------------------------------------------------------------- | ----- | ----- | ------ | ---- | ------ | -- |
-| aggregate                                                                    | 239   | 9.52  | 5.74   | 5    | 9      | 14 |
-| [session-01](figures/tyranny-of-dragons-1/sessions/session-01-histogram.png) | 24    | 9.79  | 6.93   | 3.50 | 10     | 13 |
-| [session-02](figures/tyranny-of-dragons-1/sessions/session-02-histogram.png) | 21    | 9.57  | 5.80   | 5    | 8      | 14 |
-| [session-03](figures/tyranny-of-dragons-1/sessions/session-03-histogram.png) | 14    | 11.07 | 7.21   | 8    | 11     | 15 |
-| [session-04](figures/tyranny-of-dragons-1/sessions/session-04-histogram.png) | 22    | 10.64 | 7.97   | 5    | 10     | 16 |
-| [session-05](figures/tyranny-of-dragons-1/sessions/session-05-histogram.png) | 31    | 8.84  | 6.42   | 4    | 8      | 14 |
-| [session-06](figures/tyranny-of-dragons-1/sessions/session-06-histogram.png) | 23    | 9.26  | 6.30   | 6    | 8      | 13 |
-| [session-07](figures/tyranny-of-dragons-1/sessions/session-07-histogram.png) | 18    | 12.78 | 6.68   | 9    | 15     | 17 |
-| [session-08](figures/tyranny-of-dragons-1/sessions/session-08-histogram.png) | 26    | 6.92  | 5.09   | 2    | 6      | 10 |
-| [session-09](figures/tyranny-of-dragons-1/sessions/session-09-histogram.png) | 4     | 14.50 | 11.76  | 11   | 16     | 18 |
-| [session-10](figures/tyranny-of-dragons-1/sessions/session-10-histogram.png) | 11    | 8     | 6.40   | 4    | 7      | 13 |
-| [session-11](figures/tyranny-of-dragons-1/sessions/session-11-histogram.png) | 10    | 11.60 | 7.96   | 5    | 14.50  | 15 |
-| [session-12](figures/tyranny-of-dragons-1/sessions/session-12-histogram.png) | 2     | 7     | 6.32   |      |        |    |
-| [session-13](figures/tyranny-of-dragons-1/sessions/session-13-histogram.png) | 11    | 8.64  | 5.16   | 6    | 10     | 12 |
-| [session-14](figures/tyranny-of-dragons-1/sessions/session-14-histogram.png) | 15    | 7.07  | 5.62   | 3    | 6      | 10 |
-| [session-15](figures/tyranny-of-dragons-1/sessions/session-15-histogram.png) | 7     | 10.86 | 9.04   | 5    | 10     | 17 |
+| session                                                                      | count | mean  | stddev | Q1   | median | Q3   |
+| ---------------------------------------------------------------------------- | ----- | ----- | ------ | ---- | ------ | ---- |
+| aggregate                                                                    | 278   | 9.64  | 5.84   | 5    | 9      | 15   |
+| [session-01](figures/tyranny-of-dragons-1/sessions/session-01-histogram.png) | 24    | 9.79  | 6.93   | 3.50 | 10     | 13   |
+| [session-02](figures/tyranny-of-dragons-1/sessions/session-02-histogram.png) | 21    | 9.57  | 5.80   | 5    | 8      | 14   |
+| [session-03](figures/tyranny-of-dragons-1/sessions/session-03-histogram.png) | 14    | 11.07 | 7.21   | 8    | 11     | 15   |
+| [session-04](figures/tyranny-of-dragons-1/sessions/session-04-histogram.png) | 22    | 10.64 | 7.97   | 5    | 10     | 16   |
+| [session-05](figures/tyranny-of-dragons-1/sessions/session-05-histogram.png) | 31    | 8.84  | 6.42   | 4    | 8      | 14   |
+| [session-06](figures/tyranny-of-dragons-1/sessions/session-06-histogram.png) | 23    | 9.26  | 6.30   | 6    | 8      | 13   |
+| [session-07](figures/tyranny-of-dragons-1/sessions/session-07-histogram.png) | 18    | 12.78 | 6.68   | 9    | 15     | 17   |
+| [session-08](figures/tyranny-of-dragons-1/sessions/session-08-histogram.png) | 26    | 6.92  | 5.09   | 2    | 6      | 10   |
+| [session-09](figures/tyranny-of-dragons-1/sessions/session-09-histogram.png) | 4     | 14.50 | 11.76  | 11   | 16     | 18   |
+| [session-10](figures/tyranny-of-dragons-1/sessions/session-10-histogram.png) | 11    | 8     | 6.40   | 4    | 7      | 13   |
+| [session-11](figures/tyranny-of-dragons-1/sessions/session-11-histogram.png) | 10    | 11.60 | 7.96   | 5    | 14.50  | 15   |
+| [session-12](figures/tyranny-of-dragons-1/sessions/session-12-histogram.png) | 2     | 7     | 6.32   |      |        |      |
+| [session-13](figures/tyranny-of-dragons-1/sessions/session-13-histogram.png) | 11    | 8.64  | 5.16   | 6    | 10     | 12   |
+| [session-14](figures/tyranny-of-dragons-1/sessions/session-14-histogram.png) | 15    | 7.07  | 5.62   | 3    | 6      | 10   |
+| [session-15](figures/tyranny-of-dragons-1/sessions/session-15-histogram.png) | 7     | 10.86 | 9.04   | 5    | 10     | 17   |
+| [session-16](figures/tyranny-of-dragons-1/sessions/session-16-histogram.png) | 24    | 10.62 | 7.06   | 5.50 | 12     | 17   |
+| [session-17](figures/tyranny-of-dragons-1/sessions/session-17-histogram.png) | 4     | 6.25  | 7.15   | 3    | 6.50   | 9.50 |
+| [session-18](figures/tyranny-of-dragons-1/sessions/session-18-histogram.png) | 11    | 11.36 | 9.64   | 4    | 14     | 19   |
 
 # FAQ
 
